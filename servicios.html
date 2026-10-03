@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuracion basica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios y lista de precios de Barbershop. Cortes clásicos, fades degradados, perfilado de barba y galería de trabajos reales. Reservá tu turno directo por WhatsApp.">
+    <meta name="keywords" content="servicios barbería, precios barbería, corte fade, perfilado barba, corte clásico, galería cortes, Rosario, Barbershop">
+    <title>Servicios y Galería | Barbershop</title>
+
+    <!-- Iconos de Bootstrap y estilos compilados desde SCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado fijo y navegacion principal -->
+    <header class="header-sitio">
+        <nav class="barra-navegacion" aria-label="Navegación principal">
+            <a href="index.html" class="marca-logo" aria-label="Barbershop - Inicio">
+                Barber<span>shop</span>
+            </a>
+
+            <!-- Menu en version de escritorio -->
+            <div class="menu-principal">
+                <a href="index.html" class="enlace-nav">Inicio</a>
+                <a href="servicios.html" class="enlace-nav activo" aria-current="page">Servicios</a>
+                <a href="contacto.html" class="enlace-nav">Contacto</a>
+            </div>
+
+            <!-- Boton de WhatsApp directo y boton hamburguesa para moviles -->
+            <div class="header-acciones">
+                <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20un%20turno." class="boton boton-dorado boton-reserva-header" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                    Reservar turno
+                </a>
+
+                <button class="boton-menu" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="menuMobile">
+                    <span class="linea-menu"></span>
+                    <span class="linea-menu"></span>
+                    <span class="linea-menu"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Menu desplegable para celulares -->
+        <div class="menu-mobile" id="menuMobile">
+            <ul class="lista-mobile">
+                <li><a href="index.html" class="enlace-nav">Inicio</a></li>
+                <li><a href="servicios.html" class="enlace-nav activo" aria-current="page">Servicios</a></li>
+                <li><a href="contacto.html" class="enlace-nav">Contacto</a></li>
+                <li>
+                    <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20un%20turno." class="boton boton-whatsapp boton-reserva-mobile" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        Reservar turno por WhatsApp
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Encabezado superior de la pagina -->
+        <section class="encabezado-pagina">
+            <div class="contenedor-encabezado animar-entrada">
+                <span class="etiqueta-seccion">Nuestra Carta</span>
+                <h1>Servicios pensados para tu estilo.</h1>
+                <p>
+                    Elegí el servicio que mejor se adapte a vos. Cada turno está pensado para darte un resultado prolijo, personalizado y duradero.
+                </p>
+            </div>
+        </section>
+
+        <!-- Lista completa de servicios con precios y reserva directa -->
+        <section class="seccion-servicios">
+            <div class="contenedor-servicios-lista">
+                <div class="grilla-servicios-completa">
+
+                    <!-- Servicio 1: Corte Clasico -->
+                    <article class="tarjeta-servicio">
+                        <img src="imagenes/corte-clasico.jpg" alt="Corte clásico a tijera y máquina con terminación prolija" loading="lazy">
+                        <div class="contenido-tarjeta">
+                            <h3>Corte Clásico</h3>
+                            <p>Corte tradicional trabajado a tijera o máquina, con terminación prolija y asesoramiento según tu rostro.</p>
+                            
+                            <div class="datos-servicio">
+                                <span class="duracion">
+                                    <i class="bi bi-clock" aria-hidden="true"></i>
+                                    45 minutos
+                                </span>
+                                <span class="precio">$12.000</span>
+                            </div>
+
+                            <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20reservar%20un%20turno%20para%20Corte%20Cl%C3%A1sico." class="boton boton-whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                Reservar por WhatsApp
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 2: Fade Moderno -->
+                    <article class="tarjeta-servicio">
+                        <img src="imagenes/fade-moderno.jpg" alt="Degradado fade moderno con acabado impecable" loading="lazy">
+                        <div class="contenido-tarjeta">
+                            <h3>Fade Moderno</h3>
+                            <p>Degradado personalizado con transición limpia, terminación detallada y estilo actual.</p>
+                            
+                            <div class="datos-servicio">
+                                <span class="duracion">
+                                    <i class="bi bi-clock" aria-hidden="true"></i>
+                                    50 minutos
+                                </span>
+                                <span class="precio">$14.000</span>
+                            </div>
+
+                            <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20reservar%20un%20turno%20para%20Fade%20Moderno." class="boton boton-whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                Reservar por WhatsApp
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 3: Corte y Barba -->
+                    <article class="tarjeta-servicio">
+                        <img src="imagenes/galeria-corte-1.jpg" alt="Corte completo y perfilado integral de barba" loading="lazy">
+                        <div class="contenido-tarjeta">
+                            <h3>Corte y Barba</h3>
+                            <p>Servicio completo de corte y perfilado de barba para una imagen equilibrada y cuidada.</p>
+                            
+                            <div class="datos-servicio">
+                                <span class="duracion">
+                                    <i class="bi bi-clock" aria-hidden="true"></i>
+                                    75 minutos
+                                </span>
+                                <span class="precio">$18.000</span>
+                            </div>
+
+                            <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20reservar%20un%20turno%20para%20Corte%20y%20Barba." class="boton boton-whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                Reservar por WhatsApp
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 4: Perfilado de Barba -->
+                    <article class="tarjeta-servicio">
+                        <img src="imagenes/perfilado-barba.jpg" alt="Perfilado y diseño de barba con toalla caliente y navaja" loading="lazy">
+                        <div class="contenido-tarjeta">
+                            <h3>Perfilado de Barba</h3>
+                            <p>Diseño y definición de barba respetando el crecimiento natural y el estilo de cada cliente.</p>
+                            
+                            <div class="datos-servicio">
+                                <span class="duracion">
+                                    <i class="bi bi-clock" aria-hidden="true"></i>
+                                    30 minutos
+                                </span>
+                                <span class="precio">$9.000</span>
+                            </div>
+
+                            <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20reservar%20un%20turno%20para%20Perfilado%20de%20Barba." class="boton boton-whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                Reservar por WhatsApp
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 5: Corte Infantil -->
+                    <article class="tarjeta-servicio">
+                        <img src="imagenes/galeria-corte-4.jpg" alt="Corte de cabello infantil moderno y prolijo" loading="lazy">
+                        <div class="contenido-tarjeta">
+                            <h3>Corte Infantil</h3>
+                            <p>Corte cómodo y prolijo para los más chicos, en un ambiente relajado.</p>
+                            
+                            <div class="datos-servicio">
+                                <span class="duracion">
+                                    <i class="bi bi-clock" aria-hidden="true"></i>
+                                    35 minutos
+                                </span>
+                                <span class="precio">$10.000</span>
+                            </div>
+
+                            <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20reservar%20un%20turno%20para%20Corte%20Infantil." class="boton boton-whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                Reservar por WhatsApp
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion visual intermedia (CTA) -->
+        <section class="cta-intermedio">
+            <div class="contenedor-cta">
+                <span class="etiqueta-seccion">Estilo a Medida</span>
+                <h2>¿Buscás un estilo diferente?</h2>
+                <p>
+                    Mandanos una foto de referencia y consultá qué corte o perfilado puede quedar mejor con tu estilo.
+                </p>
+                <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20un%20estilo%20personalizado." class="boton boton-dorado" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- Galeria visual de trabajos realizados -->
+        <section class="galeria-trabajos">
+            <div class="contenedor-galeria">
+                <div class="encabezado-seccion">
+                    <span class="etiqueta-seccion">Galería</span>
+                    <h2>Nuestros Trabajos</h2>
+                    <p>Algunos de los estilos y cortes realizados a diario en nuestro salón.</p>
+                </div>
+
+                <div class="grilla-galeria">
+                    <div class="item-galeria">
+                        <img src="imagenes/galeria-corte-1.jpg" alt="Trabajo de corte y barbería detallado" loading="lazy">
+                        <div class="overlay-galeria">
+                            <span>Textura y Acabado</span>
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <img src="imagenes/galeria-corte-2.jpg" alt="Corte fade medio con barba integrada" loading="lazy">
+                        <div class="overlay-galeria">
+                            <span>Mid Fade & Barba</span>
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <img src="imagenes/galeria-corte-3.jpg" alt="Corte taper fade prolijo y definido" loading="lazy">
+                        <div class="overlay-galeria">
+                            <span>Low Taper Moderno</span>
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <img src="imagenes/galeria-corte-4.jpg" alt="Corte clásico peinado a un lado" loading="lazy">
+                        <div class="overlay-galeria">
+                            <span>Estilo Ejecutivo Clásico</span>
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <img src="imagenes/galeria-corte-5.jpg" alt="Perfilado con navaja de contornos" loading="lazy">
+                        <div class="overlay-galeria">
+                            <span>Delineado de Precisión</span>
+                        </div>
+                    </div>
+
+                    <div class="item-galeria">
+                        <img src="imagenes/galeria-corte-6.jpg" alt="Diseño de textura superior y caída natural" loading="lazy">
+                        <div class="overlay-galeria">
+                            <span>Crop Top Texturado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina consistente en todo el sitio -->
+    <footer class="footer-sitio">
+        <div class="contenedor-footer">
+            <div class="grilla-footer">
+                <!-- Columna de marca -->
+                <div class="columna-marca">
+                    <a href="index.html" class="logo-footer">
+                        Barber<span>shop</span>
+                    </a>
+                    <p>Estilo, detalle y precisión para que salgas con tu mejor versión.</p>
+                    <div class="redes-footer">
+                        <a href="https://instagram.com/barbershop" class="enlace-red" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestro perfil de Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5493410000000" class="enlace-red" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna de enlaces rapidos -->
+                <div class="columna-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna de datos de la barberia -->
+                <div class="columna-info">
+                    <h4>Ubicación</h4>
+                    <ul>
+                        <li>Av. Pellegrini 4500</li>
+                        <li>Rosario, Santa Fe</li>
+                        <li>Lunes a Sábado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inferior-footer">
+                <p>&copy; 2026 Barbershop. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript Vanilla para funcionalidades interactivas -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

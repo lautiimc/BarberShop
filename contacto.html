@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuracion basica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto, horarios y ubicación de Barbershop en Rosario. Consultá tus dudas, reservá por WhatsApp y encontranos en Av. Pellegrini 4500.">
+    <meta name="keywords" content="contacto barbería, turnos barbería, dirección barbería Rosario, horarios barbería, WhatsApp barbería, Barbershop">
+    <title>Contacto y Ubicación | Barbershop</title>
+
+    <!-- Iconos de Bootstrap y estilos compilados desde SCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado fijo y navegacion principal -->
+    <header class="header-sitio">
+        <nav class="barra-navegacion" aria-label="Navegación principal">
+            <a href="index.html" class="marca-logo" aria-label="Barbershop - Inicio">
+                Barber<span>shop</span>
+            </a>
+
+            <!-- Menu en version de escritorio -->
+            <div class="menu-principal">
+                <a href="index.html" class="enlace-nav">Inicio</a>
+                <a href="servicios.html" class="enlace-nav">Servicios</a>
+                <a href="contacto.html" class="enlace-nav activo" aria-current="page">Contacto</a>
+            </div>
+
+            <!-- Boton de WhatsApp directo y boton hamburguesa para moviles -->
+            <div class="header-acciones">
+                <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20un%20turno." class="boton boton-dorado boton-reserva-header" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                    Reservar turno
+                </a>
+
+                <button class="boton-menu" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="menuMobile">
+                    <span class="linea-menu"></span>
+                    <span class="linea-menu"></span>
+                    <span class="linea-menu"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Menu desplegable para celulares -->
+        <div class="menu-mobile" id="menuMobile">
+            <ul class="lista-mobile">
+                <li><a href="index.html" class="enlace-nav">Inicio</a></li>
+                <li><a href="servicios.html" class="enlace-nav">Servicios</a></li>
+                <li><a href="contacto.html" class="enlace-nav activo" aria-current="page">Contacto</a></li>
+                <li>
+                    <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20un%20turno." class="boton boton-whatsapp boton-reserva-mobile" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        Reservar turno por WhatsApp
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Encabezado superior de la pagina -->
+        <section class="encabezado-pagina">
+            <div class="contenedor-encabezado animar-entrada">
+                <span class="etiqueta-seccion">Estamos para atenderte</span>
+                <h1>Reservá tu próximo turno.</h1>
+                <p>
+                    Escribinos por WhatsApp, seguinos en Instagram o acercate a conocernos. Estamos listos para ayudarte a encontrar tu próximo estilo.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seccion principal de contacto con datos y formulario -->
+        <section class="seccion-contacto">
+            <div class="contenedor-contacto">
+                <div class="grilla-contacto-superior">
+                    
+                    <!-- Columna 1: Informacion de contacto y Horarios -->
+                    <div class="columna-datos">
+                        
+                        <!-- Tarjetas de canales de comunicacion -->
+                        <div class="grilla-canales">
+                            <!-- Telefono / WhatsApp -->
+                            <article class="tarjeta-info">
+                                <div class="icono-info" aria-hidden="true">
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
+                                <h3>WhatsApp / Teléfono</h3>
+                                <p>
+                                    <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20hacerles%20una%20consulta." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al +54 9 341 555-5555">
+                                        +54 9 341 555-5555
+                                    </a>
+                                </p>
+                            </article>
+
+                            <!-- Correo Electronico -->
+                            <article class="tarjeta-info">
+                                <div class="icono-info" aria-hidden="true">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <h3>Email</h3>
+                                <p>
+                                    <a href="mailto:hola@barbershop.com" aria-label="Enviar correo a hola@barbershop.com">
+                                        hola@barbershop.com
+                                    </a>
+                                </p>
+                            </article>
+
+                            <!-- Direccion -->
+                            <article class="tarjeta-info">
+                                <div class="icono-info" aria-hidden="true">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <h3>Dirección</h3>
+                                <p>Av. Pellegrini 4500<br>Rosario, Santa Fe</p>
+                            </article>
+
+                            <!-- Instagram -->
+                            <article class="tarjeta-info">
+                                <div class="icono-info" aria-hidden="true">
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                                <h3>Instagram</h3>
+                                <p>
+                                    <a href="https://instagram.com/barbershop" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de Instagram de Barbershop">
+                                        @barbershop
+                                    </a>
+                                </p>
+                            </article>
+                        </div>
+
+                        <!-- Tarjeta de Horarios de atencion -->
+                        <div class="tarjeta-horarios">
+                            <h3>
+                                <i class="bi bi-clock-history" aria-hidden="true"></i>
+                                Horarios de Atención
+                            </h3>
+                            <ul class="lista-horarios">
+                                <li>
+                                    <span class="dia">Lunes a Viernes</span>
+                                    <span class="hora">10:00 a 20:00</span>
+                                </li>
+                                <li>
+                                    <span class="dia">Sábados</span>
+                                    <span class="hora">09:00 a 19:00</span>
+                                </li>
+                                <li>
+                                    <span class="dia">Domingos</span>
+                                    <span class="hora">Cerrado</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Columna 2: Formulario de consulta frontend -->
+                    <div class="columna-formulario">
+                        <h2>Envianos tu consulta</h2>
+                        <p class="bajada-form">Completá los campos y te responderemos a la brevedad.</p>
+
+                        <form class="formulario-contacto" action="#" method="POST">
+                            <div class="grupo-campo">
+                                <label for="campoNombre">Nombre completo</label>
+                                <input type="text" id="campoNombre" name="nombre" placeholder="Ej: Lucas Martínez" required>
+                            </div>
+
+                            <div class="grupo-campo">
+                                <label for="campoTelefono">Teléfono o WhatsApp</label>
+                                <input type="tel" id="campoTelefono" name="telefono" placeholder="Ej: 341 123 4567" required>
+                            </div>
+
+                            <div class="grupo-campo">
+                                <label for="campoMensaje">Mensaje o consulta</label>
+                                <textarea id="campoMensaje" name="mensaje" placeholder="Contanos qué servicio buscás o tu duda..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="boton boton-dorado">
+                                Enviar consulta
+                                <i class="bi bi-send" aria-hidden="true"></i>
+                            </button>
+                        </form>
+
+                        <p class="aviso-whatsapp-form">
+                            Para una respuesta más rápida, escribinos directamente por <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20hacerles%20una%20consulta." target="_blank" rel="noopener noreferrer">WhatsApp</a>.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Bloque de Mapa de Ubicacion -->
+                <div class="bloque-ubicacion">
+                    <span class="etiqueta-seccion" style="display: block; text-align: center;">Cómo llegar</span>
+                    <h2>Nuestra Ubicación</h2>
+                    <p class="subtitulo-mapa">Estamos ubicados sobre Av. Pellegrini, con fácil acceso y estacionamiento en la zona.</p>
+
+                    <div class="mapa-contenedor">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8863007204655!2d-60.68600102353381!3d-32.95400267358999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7acb689bd485d%3A0xe744e82d7a224c6e!2sAv.%20Pellegrini%204500%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1710000000000!5m2!1ses-419!2sar" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade" 
+                            title="Ubicación de Barbershop en Av. Pellegrini 4500, Rosario">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina consistente en todo el sitio -->
+    <footer class="footer-sitio">
+        <div class="contenedor-footer">
+            <div class="grilla-footer">
+                <!-- Columna de marca -->
+                <div class="columna-marca">
+                    <a href="index.html" class="logo-footer">
+                        Barber<span>shop</span>
+                    </a>
+                    <p>Estilo, detalle y precisión para que salgas con tu mejor versión.</p>
+                    <div class="redes-footer">
+                        <a href="https://instagram.com/barbershop" class="enlace-red" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestro perfil de Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5493410000000" class="enlace-red" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna de enlaces rapidos -->
+                <div class="columna-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna de datos de la barberia -->
+                <div class="columna-info">
+                    <h4>Ubicación</h4>
+                    <ul>
+                        <li>Av. Pellegrini 4500</li>
+                        <li>Rosario, Santa Fe</li>
+                        <li>Lunes a Sábado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inferior-footer">
+                <p>&copy; 2026 Barbershop. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript Vanilla para funcionalidades interactivas -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

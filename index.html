@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuracion basica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbershop: Barbería profesional en Rosario. Cortes clásicos, fades modernos, perfilado de barba y reservas directas por WhatsApp. Tu mejor versión te espera.">
+    <meta name="keywords" content="barbería, corte clásico, fade, degradado, perfilado de barba, Rosario, turnos barbería, Barbershop">
+    <title>Barbershop | Tu estilo habla antes que vos</title>
+
+    <!-- Iconos de Bootstrap y estilos compilados desde SCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado fijo y navegacion principal -->
+    <header class="header-sitio">
+        <nav class="barra-navegacion" aria-label="Navegación principal">
+            <a href="index.html" class="marca-logo" aria-label="Barbershop - Inicio">
+                Barber<span>shop</span>
+            </a>
+
+            <!-- Menu en version de escritorio -->
+            <div class="menu-principal">
+                <a href="index.html" class="enlace-nav activo" aria-current="page">Inicio</a>
+                <a href="servicios.html" class="enlace-nav">Servicios</a>
+                <a href="contacto.html" class="enlace-nav">Contacto</a>
+            </div>
+
+            <!-- Boton de WhatsApp directo y boton hamburguesa para moviles -->
+            <div class="header-acciones">
+                <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20un%20turno." class="boton boton-dorado boton-reserva-header" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                    Reservar turno
+                </a>
+
+                <button class="boton-menu" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="menuMobile">
+                    <span class="linea-menu"></span>
+                    <span class="linea-menu"></span>
+                    <span class="linea-menu"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Menu desplegable para celulares -->
+        <div class="menu-mobile" id="menuMobile">
+            <ul class="lista-mobile">
+                <li><a href="index.html" class="enlace-nav activo" aria-current="page">Inicio</a></li>
+                <li><a href="servicios.html" class="enlace-nav">Servicios</a></li>
+                <li><a href="contacto.html" class="enlace-nav">Contacto</a></li>
+                <li>
+                    <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20un%20turno." class="boton boton-whatsapp boton-reserva-mobile" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        Reservar turno por WhatsApp
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seccion Hero principal -->
+        <section class="hero-inicio">
+            <div class="contenedor-hero">
+                <div class="contenido-hero animar-entrada">
+                    <span class="etiqueta-seccion">Barbería Urbana & Premium</span>
+                    <h1>Tu estilo habla <span>antes que vos.</span></h1>
+                    <p class="bajada-hero">
+                        Cortes precisos, perfilados impecables y una experiencia pensada para que salgas con tu mejor versión.
+                    </p>
+                    <div class="acciones-hero">
+                        <a href="https://wa.me/5493410000000?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad%20para%20reservar%20un%20turno." class="boton boton-dorado" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                            Reservar turno por WhatsApp
+                        </a>
+                        <a href="servicios.html" class="boton boton-outline">
+                            Ver servicios
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Sobre la Barberia -->
+        <section class="sobre-barberia">
+            <div class="contenedor-sobre">
+                <div class="texto-sobre">
+                    <span class="etiqueta-seccion">Quiénes somos</span>
+                    <h2>Más que un corte, una experiencia.</h2>
+                    <p>
+                        En Barbershop combinamos técnica, detalle y estilo para que cada visita sea un momento para vos. Desde un corte clásico hasta un fade moderno, trabajamos para que te vayas seguro de tu imagen.
+                    </p>
+                    <p>
+                        Entendemos la importancia de un ambiente cómodo, buena música y la dedicación necesaria en cada detalle para lograr resultados impecables y duraderos.
+                    </p>
+
+                    <div class="caracteristicas-barberia">
+                        <div class="item-caracteristica">
+                            <h4>Atención Personalizada</h4>
+                            <p>Asesoramiento según la forma de tu rostro y tipo de cabello.</p>
+                        </div>
+                        <div class="item-caracteristica">
+                            <h4>Productos Premium</h4>
+                            <p>Pomadas, aceites y lociones de primera calidad para tu cuidado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imagen-sobre">
+                    <img src="imagenes/barberia-interior.jpg" alt="Interior acogedor y sillones clásicos de Barbershop" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Servicios Destacados -->
+        <section class="servicios-destacados">
+            <div class="contenedor-servicios">
+                <div class="encabezado-seccion">
+                    <span class="etiqueta-seccion">Lo más pedido</span>
+                    <h2>Nuestros servicios destacados</h2>
+                    <p>Una selección de los trabajos que eligen nuestros clientes para mantener su estilo diario al día.</p>
+                </div>
+
+                <div class="grilla-destacados">
+                    <!-- Tarjeta 1: Corte Clasico -->
+                    <article class="tarjeta-servicio">
+                        <img src="imagenes/corte-clasico.jpg" alt="Corte de cabello masculino estilo tradicional y pulcro" loading="lazy">
+                        <div class="contenido-tarjeta">
+                            <h3>Corte Clásico</h3>
+                            <p>Un corte prolijo, limpio y atemporal para quienes valoran el estilo tradicional.</p>
+                            <a href="servicios.html" class="boton boton-outline">
+                                Ver detalle
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 2: Fade Moderno -->
+                    <article class="tarjeta-servicio">
+                        <img src="imagenes/fade-moderno.jpg" alt="Corte degrade masculino moderno y definido" loading="lazy">
+                        <div class="contenido-tarjeta">
+                            <h3>Fade Moderno</h3>
+                            <p>Degradado preciso y personalizado para un look actual y definido.</p>
+                            <a href="servicios.html" class="boton boton-outline">
+                                Ver detalle
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 3: Perfilado de Barba -->
+                    <article class="tarjeta-servicio">
+                        <img src="imagenes/perfilado-barba.jpg" alt="Cuidado y delineado profesional de barba" loading="lazy">
+                        <div class="contenido-tarjeta">
+                            <h3>Perfilado de Barba</h3>
+                            <p>Diseño, cuidado y definición para acompañar tu estilo.</p>
+                            <a href="servicios.html" class="boton boton-outline">
+                                Ver detalle
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="acciones-centro">
+                    <a href="servicios.html" class="boton boton-dorado">
+                        Ver todos los servicios
+                        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Testimonios de clientes -->
+        <section class="testimonios">
+            <div class="contenedor-testimonios">
+                <div class="encabezado-seccion">
+                    <span class="etiqueta-seccion">Opiniones</span>
+                    <h2>Clientes que vuelven por el detalle.</h2>
+                    <p>La confianza y satisfacción de quienes nos eligen semana a semana es nuestra mejor carta de presentación.</p>
+                </div>
+
+                <div class="grilla-testimonios">
+                    <!-- Testimonio 1 -->
+                    <article class="tarjeta-testimonio">
+                        <div class="estrellas" aria-label="Calificación: 5 de 5 estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"Excelente atención y un corte impecable. Se nota que cuidan cada detalle."</p>
+                        <span class="autor">— Nicolás G.</span>
+                    </article>
+
+                    <!-- Testimonio 2 -->
+                    <article class="tarjeta-testimonio">
+                        <div class="estrellas" aria-label="Calificación: 5 de 5 estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"El fade quedó perfecto. Muy buena onda y un lugar cómodo."</p>
+                        <span class="autor">— Tomás R.</span>
+                    </article>
+
+                    <!-- Testimonio 3 -->
+                    <article class="tarjeta-testimonio">
+                        <div class="estrellas" aria-label="Calificación: 5 de 5 estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"Vengo hace meses. Siempre salgo conforme con el resultado."</p>
+                        <span class="autor">— Franco M.</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina consistente en todo el sitio -->
+    <footer class="footer-sitio">
+        <div class="contenedor-footer">
+            <div class="grilla-footer">
+                <!-- Columna de marca -->
+                <div class="columna-marca">
+                    <a href="index.html" class="logo-footer">
+                        Barber<span>shop</span>
+                    </a>
+                    <p>Estilo, detalle y precisión para que salgas con tu mejor versión.</p>
+                    <div class="redes-footer">
+                        <a href="https://instagram.com/barbershop" class="enlace-red" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestro perfil de Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5493410000000" class="enlace-red" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna de enlaces rapidos -->
+                <div class="columna-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna de datos de la barberia -->
+                <div class="columna-info">
+                    <h4>Ubicación</h4>
+                    <ul>
+                        <li>Av. Pellegrini 4500</li>
+                        <li>Rosario, Santa Fe</li>
+                        <li>Lunes a Sábado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inferior-footer">
+                <p>&copy; 2026 Barbershop. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript Vanilla para funcionalidades interactivas -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
