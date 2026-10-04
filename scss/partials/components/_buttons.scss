@@ -1,0 +1,78 @@
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+// Boton base con tipografia Oswald y sombra stamp.
+.boton {
+    @extend %transicion;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.6rem;
+    border-radius: variables.$radio-chico;
+    font-family: variables.$fuente-etiquetas;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: variables.$sombra-stamp;
+
+    &:active {
+        transform: translate(1px, 1px);
+        box-shadow: 2px 2px 0px 0px #100e0b;
+    }
+
+    &:focus-visible {
+        outline: 2px solid variables.$dorado;
+        outline-offset: 3px;
+    }
+
+    i {
+        font-size: 1.15rem;
+    }
+}
+
+// Boton primario carmesi con marco dorado.
+.boton-dorado {
+    background-color: variables.$rojo-barbero;
+    color: #fffbff;
+    border: 2px solid variables.$dorado;
+
+    &:hover {
+        background-color: variables.$rojo-hover;
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: variables.$sombra-stamp;
+    }
+}
+
+// Boton secundario con borde de laton.
+.boton-outline {
+    background-color: variables.$fondo-elevado;
+    color: variables.$dorado;
+    border: 1px solid variables.$dorado;
+
+    &:hover {
+        background-color: variables.$dorado;
+        border-color: variables.$dorado;
+        color: #100e0b;
+        transform: translateY(-2px);
+    }
+}
+
+// Boton para reservas de WhatsApp.
+.boton-whatsapp {
+    background-color: variables.$rojo-barbero;
+    color: #fffbff;
+    border: 2px solid variables.$dorado;
+
+    &:hover {
+        background-color: variables.$rojo-hover;
+        border-color: variables.$dorado;
+        color: #ffffff;
+        transform: translateY(-2px);
+    }
+}

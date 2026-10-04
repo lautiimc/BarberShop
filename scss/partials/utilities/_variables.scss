@@ -1,0 +1,42 @@
+// Variables globales de identidad visual - Estilo Heritage Barber Craft
+
+// Tipografias de Google Fonts.
+$fuente-titulos: "Playfair Display", serif;
+$fuente-etiquetas: "Oswald", sans-serif;
+$fuente-cuerpo: "Work Sans", sans-serif;
+
+// Paleta cromatica inspirada en barberias clasicas y tonalidades de cuero y tabaco.
+$fondo-principal: #161310;
+$fondo-secundario: #221f1c;
+$fondo-profundo: #100e0b;
+$fondo-elevado: #2d2926;
+$fondo-tarjeta-hover: #2b2723;
+
+// Acentos cromaticos clasicos.
+$rojo-barbero: #c84b31;
+$rojo-hover: #aa361e;
+$dorado: #fabc4d;
+$dorado-oscuro: #bd8718;
+$azul-barbero: #3a72cf;
+
+// Textos y contrastes de pergamino calido.
+$blanco-crema: #e9e1dc;
+$gris-texto: #a78a84;
+$gris-claro: #e0bfb9;
+
+// Bordes grabados y tramline.
+$borde: #58413c;
+$borde-dorado: rgba(250, 188, 77, 0.5);
+
+// Sombras tipo sello fisico (tactile stamp shadow).
+$sombra-stamp: 3px 3px 0px 0px #100e0b;
+$sombra: 0 18px 45px rgba(0, 0, 0, 0.4);
+
+// Bordes netos y clasicos.
+$radio-chico: 4px;
+$radio-mediano: 6px;
+
+// Medidas y espaciados de estructura.
+$ancho-maximo: 1200px;
+$espacio-seccion: 5rem;
+$espacio-seccion-movil: 3.5rem;

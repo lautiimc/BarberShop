@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <g transform="translate(400, 300) rotate(-16) translate(-400, -300)" stroke="#fabc4d" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Pivote con remache -->
+    <circle cx="340" cy="330" r="14" stroke="#fabc4d" stroke-width="2.5" fill="#221f1c" />
+    <circle cx="340" cy="330" r="7" fill="#fabc4d" />
+    <circle cx="340" cy="330" r="3" fill="#161310" />
+
+    <!-- Mango tradicional (cachas) -->
+    <path d="M 335,340 
+             C 300,380 230,440 120,470 
+             C 90,478 70,455 85,435 
+             C 170,365 260,305 320,315 Z" 
+          stroke="#fabc4d" stroke-width="3" fill="#fabc4d" fill-opacity="0.25" />
+
+    <!-- Remache inferior -->
+    <circle cx="102" cy="452" r="5" fill="#fabc4d" />
+
+    <!-- Espiga de agarre (tang) -->
+    <path d="M 330,345 
+             C 310,365 285,380 260,370 
+             C 245,360 252,345 270,340 
+             C 295,335 320,330 340,320" 
+          stroke="#fabc4d" stroke-width="3.5" />
+    
+    <!-- Ranuras antideslizantes -->
+    <line x1="285" y1="345" x2="288" y2="353" stroke="#fabc4d" stroke-width="2" />
+    <line x1="295" y1="342" x2="298" y2="350" stroke="#fabc4d" stroke-width="2" />
+    <line x1="305" y1="339" x2="308" y2="347" stroke="#fabc4d" stroke-width="2" />
+
+    <!-- Cuello -->
+    <path d="M 345,320 L 385,295 L 390,320 L 340,340 Z" 
+          stroke="#fabc4d" stroke-width="3" fill="#fabc4d" fill-opacity="0.3" />
+
+    <!-- Hoja principal -->
+    <path d="M 385,295 
+             L 660,110 
+             C 685,95 710,115 695,140 
+             L 655,170 
+             C 560,235 470,295 390,320 Z" 
+          stroke="#fabc4d" stroke-width="3.5" fill="#fabc4d" fill-opacity="0.3" />
+
+    <!-- Linea de vaciado -->
+    <path d="M 395,295 C 485,235 575,175 665,115" 
+          stroke="#fabc4d" stroke-width="2" stroke-dasharray="10 4" opacity="0.8" />
+
+    <!-- Filo de corte -->
+    <path d="M 400,315 C 480,260 565,200 650,145" 
+          stroke="#ffffff" stroke-width="3" opacity="0.9" />
+
+    <!-- Grabado de lomo -->
+    <line x1="430" y1="265" x2="480" y2="230" stroke="#fabc4d" stroke-width="1.8" />
+    <line x1="435" y1="272" x2="485" y2="237" stroke="#fabc4d" stroke-width="1.8" />
+  </g>
+</svg>

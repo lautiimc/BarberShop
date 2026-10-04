@@ -1,0 +1,16 @@
+// Estilos compartidos con placeholders.
+
+// Transicion suave para botones, enlaces y tarjetas.
+%transicion {
+    transition: all 0.25s ease;
+}
+
+// Contenedor centrado para mantener anchos consistentes.
+%contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}

@@ -1,0 +1,90 @@
+@use "../utilities/variables";
+
+// Tipografias de estilo Heritage: Playfair Display, Oswald y Work Sans.
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+body {
+    font-family: variables.$fuente-cuerpo;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: variables.$gris-claro;
+    background-color: variables.$fondo-principal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: variables.$fuente-titulos;
+    color: variables.$blanco-crema;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 5.5vw, 4rem);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3.8vw, 2.6rem);
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+}
+
+p {
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Rotulos y etiquetas de estilo vintage.
+.etiqueta-seccion {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.85rem;
+    font-family: variables.$fuente-etiquetas;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: variables.$dorado;
+    background-color: variables.$fondo-elevado;
+    padding: 0.35rem 0.9rem;
+    border-radius: variables.$radio-chico;
+    border: 1px solid variables.$borde;
+    box-shadow: variables.$sombra-stamp;
+
+    &::before,
+    &::after {
+        content: "✦";
+        font-size: 0.75rem;
+        color: variables.$dorado;
+    }
+}
+
+// Encabezados centrados de seccion.
+.encabezado-seccion {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 3rem auto;
+
+    h2 {
+        margin-bottom: 0.75rem;
+        color: variables.$blanco-crema;
+    }
+
+    p {
+        color: variables.$gris-texto;
+        font-size: 1.05rem;
+    }
+}

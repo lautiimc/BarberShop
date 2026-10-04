@@ -1,0 +1,15 @@
+// Mixins utilitarios para responsive.
+
+// Media query para escritorio y tablets desde un ancho minimo.
+@mixin desde($medida) {
+    @media (min-width: $medida) {
+        @content;
+    }
+}
+
+// Media query para celulares hasta un ancho maximo.
+@mixin hasta($medida) {
+    @media (max-width: $medida) {
+        @content;
+    }
+}

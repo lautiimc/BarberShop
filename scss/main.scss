@@ -1,0 +1,21 @@
+// Archivo principal de Sass: conecta los parciales del sitio en desarrollo.
+
+// UTILITIES: variables, mixins y estilos reutilizables.
+@use "./partials/utilities/variables";
+@use "./partials/utilities/mixin";
+@use "./partials/utilities/extend";
+
+// BASE: reglas generales y tipografias.
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+// COMPONENTS: piezas que se reutilizan en distintas secciones.
+@use "./partials/components/buttons";
+@use "./partials/components/cards";
+@use "./partials/components/animations";
+
+// LAYOUT: estructura de las paginas desarrolladas.
+@use "./partials/layout/header";
+@use "./partials/layout/inicio";
+@use "./partials/layout/servicios";
+@use "./partials/layout/footer";

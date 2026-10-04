@@ -1,0 +1,56 @@
+@use "../utilities/variables";
+@use "../utilities/mixin";
+@use "../utilities/extend";
+
+// Encabezado principal de la pagina.
+.encabezado-pagina {
+    padding: 5rem 0 3.5rem 0;
+    text-align: center;
+    background: linear-gradient(180deg, #100e0b 0%, #161310 100%);
+    border-bottom: 1px solid variables.$borde;
+
+    .contenedor-encabezado {
+        @extend %contenedor;
+        max-width: 780px;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        color: variables.$blanco-crema;
+        font-size: clamp(2.3rem, 5vw, 3.4rem);
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: variables.$gris-texto;
+        line-height: 1.7;
+    }
+}
+
+// Lista completa de servicios y precios hasta corte infantil.
+.seccion-servicios {
+    padding: variables.$espacio-seccion 0;
+    background-color: variables.$fondo-principal;
+
+    @include mixin.hasta(768px) {
+        padding: variables.$espacio-seccion-movil 0;
+    }
+
+    .contenedor-servicios-lista {
+        @extend %contenedor;
+    }
+
+    .grilla-servicios-completa {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+
+        @include mixin.desde(680px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mixin.desde(1024px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

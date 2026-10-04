@@ -1,0 +1,140 @@
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+// Tarjetas para servicios con sombra stamp.
+.tarjeta-servicio {
+    @extend %transicion;
+    overflow: hidden;
+    background-color: variables.$fondo-secundario;
+    border: 1px solid variables.$borde;
+    border-radius: variables.$radio-mediano;
+    box-shadow: variables.$sombra-stamp;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        border-color: variables.$dorado;
+        transform: translateY(-4px);
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        border-bottom: 1px solid variables.$borde;
+    }
+}
+
+// Contenedor interior del texto de la tarjeta.
+.contenido-tarjeta {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    h3 {
+        margin-bottom: 0.6rem;
+        color: variables.$blanco-crema;
+        font-family: variables.$fuente-titulos;
+        font-size: 1.35rem;
+        font-weight: 700;
+    }
+
+    p {
+        color: variables.$gris-texto;
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+        flex-grow: 1;
+    }
+}
+
+// Meta datos de servicio: duracion y precio.
+.datos-servicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    margin-bottom: 1.25rem;
+    border-top: 1px solid variables.$borde;
+
+    .duracion {
+        font-family: variables.$fuente-etiquetas;
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: variables.$dorado;
+        background-color: variables.$fondo-profundo;
+        padding: 0.25rem 0.6rem;
+        border-radius: variables.$radio-chico;
+        border: 1px solid variables.$borde;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        i {
+            color: variables.$dorado;
+        }
+    }
+
+    .precio {
+        font-family: variables.$fuente-etiquetas;
+        font-size: 1.45rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: variables.$dorado;
+    }
+}
+
+// Tarjeta para opiniones de clientes.
+.tarjeta-testimonio {
+    @extend %transicion;
+    background-color: variables.$fondo-secundario;
+    border: 1px solid variables.$borde;
+    border-radius: variables.$radio-mediano;
+    box-shadow: variables.$sombra-stamp;
+    padding: 2rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        border-color: variables.$dorado;
+        transform: translateY(-4px);
+    }
+
+    .estrellas {
+        color: variables.$dorado;
+        font-size: 1.1rem;
+        letter-spacing: 0.15em;
+        margin-bottom: 1.25rem;
+    }
+
+    p {
+        color: variables.$blanco-crema;
+        font-size: 1.05rem;
+        font-style: italic;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .autor {
+        font-family: variables.$fuente-titulos;
+        font-weight: 700;
+        color: variables.$dorado;
+        font-size: 1.05rem;
+        font-style: normal;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1rem;
+        border-top: 1px solid variables.$borde;
+
+        &::after {
+            content: "GOOGLE 5.0 ★";
+            font-family: variables.$fuente-etiquetas;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            color: variables.$dorado;
+        }
+    }
+}
