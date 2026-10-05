@@ -2,7 +2,7 @@
 @use "../utilities/mixin";
 @use "../utilities/extend";
 
-// Encabezado principal con cinta tradicional superior.
+// Encabezado principal con cinta tradicional de barbero (barber ribbon) superior.
 .header-sitio {
     position: sticky;
     top: 0;
@@ -16,6 +16,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     @extend %transicion;
 
+    // Cinta de barbero tradicional tricolor en la parte superior del encabezado
     &::before {
         content: "";
         display: block;
@@ -42,7 +43,7 @@
     gap: 1.5rem;
 }
 
-// Logo tipografico del salon.
+// Logo tipografico con estetica de cartel tradicional.
 .marca-logo {
     display: flex;
     flex-direction: column;
@@ -73,7 +74,7 @@
     }
 }
 
-// Menu de navegacion en escritorio.
+// Menu de navegacion en escritorio con botones en caps y caja stamp.
 .menu-principal {
     display: none;
 
@@ -129,7 +130,7 @@
     }
 }
 
-// Boton hamburguesa para celulares.
+// Boton de menu hamburguesa para mobile.
 .boton-menu {
     display: flex;
     flex-direction: column;
@@ -167,6 +168,7 @@
         @extend %transicion;
     }
 
+    // Transformacion a cruz (X) cuando el menu esta desplegado.
     &[aria-expanded="true"] {
         .linea-menu:nth-child(1) {
             transform: translateY(7px) rotate(45deg);
@@ -182,7 +184,7 @@
     }
 }
 
-// Menu desplegable mobile.
+// Menu desplegable para celulares.
 .menu-mobile {
     display: none;
     background-color: variables.$fondo-secundario;

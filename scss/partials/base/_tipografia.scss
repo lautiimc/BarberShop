@@ -1,6 +1,6 @@
 @use "../utilities/variables";
 
-// Tipografias de estilo Heritage: Playfair Display, Oswald y Work Sans.
+// Importacion de tipografias de estilo Heritage: Playfair Display, Oswald y Work Sans.
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
 
 body {
@@ -14,7 +14,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     font-family: variables.$fuente-titulos;
     color: variables.$blanco-crema;
     line-height: 1.2;
@@ -46,7 +48,7 @@ p {
     }
 }
 
-// Rotulos y etiquetas de estilo vintage.
+// Subtitulos y etiquetas en estilo rotulo vintage de taller.
 .etiqueta-seccion {
     display: inline-flex;
     align-items: center;
@@ -72,7 +74,7 @@ p {
     }
 }
 
-// Encabezados centrados de seccion.
+// Encabezados centrados con adorno tradicional.
 .encabezado-seccion {
     text-align: center;
     max-width: 720px;

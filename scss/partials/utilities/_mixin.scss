@@ -1,15 +1,23 @@
-// Mixins utilitarios para responsive.
+// Mixins utilitarios para responsive y alineacion.
 
-// Media query para escritorio y tablets desde un ancho minimo.
+// Media query para mobile-first (desde un ancho minimo).
 @mixin desde($medida) {
     @media (min-width: $medida) {
         @content;
     }
 }
 
-// Media query para celulares hasta un ancho maximo.
+// Media query para pantallas chicas (hasta un ancho maximo).
 @mixin hasta($medida) {
     @media (max-width: $medida) {
         @content;
     }
+}
+
+// Atajo para contenedores con Flexbox.
+@mixin flex($direccion: row, $justificado: center, $alineacion: center) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificado;
+    align-items: $alineacion;
 }

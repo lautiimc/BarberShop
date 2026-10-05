@@ -1,0 +1,48 @@
+@use "../utilities/variables";
+
+// Contenedores multimedia, mapa e insignias con estetica Heritage Barber.
+
+// Contenedor responsive para el mapa de Google Maps con sombra stamp.
+.mapa-contenedor {
+    width: 100%;
+    height: 380px;
+    border-radius: variables.$radio-mediano;
+    overflow: hidden;
+    border: 1px solid variables.$borde;
+    box-shadow: variables.$sombra-stamp;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        filter: grayscale(90%) invert(90%) contrast(85%);
+        display: block;
+    }
+}
+
+// Imagen con aspecto de cuadro y sombra stamp.
+.imagen-destacada {
+    width: 100%;
+    border-radius: variables.$radio-mediano;
+    border: 1px solid variables.$borde;
+    object-fit: cover;
+    box-shadow: variables.$sombra-stamp;
+}
+
+// Insignia o sello artesanal de taller.
+.insignia {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: variables.$radio-chico;
+    font-family: variables.$fuente-etiquetas;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: variables.$fondo-elevado;
+    color: variables.$dorado;
+    border: 1px solid variables.$dorado;
+    box-shadow: variables.$sombra-stamp;
+}

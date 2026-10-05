@@ -1,0 +1,204 @@
+@use "../utilities/variables";
+@use "../utilities/mixin";
+@use "../utilities/extend";
+
+// Seccion de contacto y horarios de atencion.
+.seccion-contacto {
+    padding: variables.$espacio-seccion 0;
+    background-color: variables.$fondo-principal;
+
+    @include mixin.hasta(768px) {
+        padding: variables.$espacio-seccion-movil 0;
+    }
+
+    .contenedor-contacto {
+        @extend %contenedor;
+    }
+
+    .grilla-contacto-superior {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 4rem;
+
+        @include mixin.desde(992px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+    }
+}
+
+// Canales de atencion y horarios.
+.columna-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+
+    .grilla-canales {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+
+        @include mixin.desde(540px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    // Horarios de atencion.
+    .tarjeta-horarios {
+        background-color: variables.$fondo-secundario;
+        border: 1px solid variables.$borde;
+        border-radius: variables.$radio-mediano;
+        box-shadow: variables.$sombra-stamp;
+        padding: 1.75rem;
+
+        h3 {
+            font-family: variables.$fuente-etiquetas;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: variables.$dorado;
+
+            i {
+                color: variables.$dorado;
+            }
+        }
+
+        .lista-horarios {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 0.6rem;
+                border-bottom: 1px solid rgba(88, 65, 60, 0.4);
+                font-size: 0.95rem;
+
+                &:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+
+                .dia {
+                    color: variables.$blanco-crema;
+                    font-weight: 500;
+                }
+
+                .hora {
+                    font-family: variables.$fuente-etiquetas;
+                    color: variables.$dorado;
+                    font-weight: 600;
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+    }
+}
+
+// Formulario de consulta.
+.columna-formulario {
+    background-color: variables.$fondo-secundario;
+    border: 1px solid variables.$borde;
+    border-radius: variables.$radio-mediano;
+    padding: 2.25rem;
+    box-shadow: variables.$sombra-stamp;
+
+    h2 {
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+        color: variables.$blanco-crema;
+    }
+
+    .bajada-form {
+        color: variables.$gris-texto;
+        font-size: 0.95rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .formulario-contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .grupo-campo {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+
+        label {
+            font-family: variables.$fuente-etiquetas;
+            font-size: 0.88rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: variables.$blanco-crema;
+        }
+
+        input,
+        textarea {
+            @extend %transicion;
+            width: 100%;
+            background-color: variables.$fondo-profundo;
+            border: 1px solid variables.$borde;
+            border-radius: variables.$radio-chico;
+            padding: 0.85rem 1rem;
+            color: variables.$blanco-crema;
+            font-size: 0.95rem;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+
+            &::placeholder {
+                color: #655955;
+            }
+
+            &:focus {
+                border-color: variables.$dorado;
+                box-shadow: 0 0 0 2px rgba(250, 188, 77, 0.25);
+            }
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+    }
+
+    .aviso-whatsapp-form {
+        margin-top: 1.25rem;
+        font-size: 0.88rem;
+        color: variables.$gris-texto;
+        text-align: center;
+
+        a {
+            color: variables.$dorado;
+            font-weight: 600;
+            text-decoration: underline;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+// Mapa de ubicacion.
+.bloque-ubicacion {
+    h2 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        color: variables.$blanco-crema;
+    }
+
+    .subtitulo-mapa {
+        text-align: center;
+        color: variables.$gris-texto;
+        margin-bottom: 2rem;
+    }
+}

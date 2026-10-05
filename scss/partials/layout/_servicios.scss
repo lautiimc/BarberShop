@@ -27,7 +27,7 @@
     }
 }
 
-// Lista completa de servicios y precios hasta corte infantil.
+// Lista completa de servicios y precios.
 .seccion-servicios {
     padding: variables.$espacio-seccion 0;
     background-color: variables.$fondo-principal;
@@ -52,5 +52,45 @@
         @include mixin.desde(1024px) {
             grid-template-columns: repeat(3, 1fr);
         }
+    }
+}
+
+// Bloque intermedio para consultas personalizadas.
+.cta-intermedio {
+    padding: 5rem 0;
+    background-color: variables.$fondo-secundario;
+    border-top: 1px solid variables.$borde;
+    border-bottom: 1px solid variables.$borde;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, variables.$dorado, transparent);
+    }
+
+    .contenedor-cta {
+        @extend %contenedor;
+        text-align: center;
+        max-width: 720px;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        color: variables.$blanco-crema;
+        font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    }
+
+    p {
+        font-size: 1.05rem;
+        color: variables.$gris-claro;
+        margin-bottom: 2rem;
+        line-height: 1.6;
     }
 }

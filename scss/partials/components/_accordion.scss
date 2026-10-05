@@ -1,0 +1,64 @@
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+// Estilos para acordeon de preguntas frecuentes (opcional o de soporte).
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.acordeon-item {
+    @extend %transicion;
+    background-color: variables.$fondo-secundario;
+    border: 1px solid variables.$borde;
+    border-radius: variables.$radio-mediano;
+    overflow: hidden;
+
+    &:hover {
+        border-color: rgba(variables.$dorado, 0.4);
+    }
+
+    &[open] {
+        border-color: rgba(variables.$dorado, 0.6);
+
+        .acordeon-resumen::after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.acordeon-resumen {
+    padding: 1.25rem 1.5rem;
+    font-family: variables.$fuente-titulos;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: variables.$blanco-crema;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    list-style: none;
+
+    &::-webkit-details-marker {
+        display: none;
+    }
+
+    &::after {
+        @extend %transicion;
+        content: "\F282";
+        font-family: "bootstrap-icons";
+        font-size: 1rem;
+        color: variables.$dorado;
+    }
+}
+
+.acordeon-contenido {
+    padding: 0 1.5rem 1.25rem 1.5rem;
+    color: variables.$gris-texto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

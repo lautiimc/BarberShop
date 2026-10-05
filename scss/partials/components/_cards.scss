@@ -1,7 +1,7 @@
 @use "../utilities/variables";
 @use "../utilities/extend";
 
-// Tarjetas para servicios con sombra stamp.
+// Tarjetas para servicios con acabado tradicional y sombra stamp.
 .tarjeta-servicio {
     @extend %transicion;
     overflow: hidden;
@@ -25,7 +25,7 @@
     }
 }
 
-// Contenedor interior del texto de la tarjeta.
+// Contenedor interior del texto de la tarjeta de servicio.
 .contenido-tarjeta {
     padding: 1.5rem;
     display: flex;
@@ -48,7 +48,7 @@
     }
 }
 
-// Meta datos de servicio: duracion y precio.
+// Meta datos de servicio: duracion y precio con tipografia Oswald.
 .datos-servicio {
     display: flex;
     justify-content: space-between;
@@ -85,7 +85,7 @@
     }
 }
 
-// Tarjeta para opiniones de clientes.
+// Tarjeta para opiniones de clientes con marco de madera oscura y laton.
 .tarjeta-testimonio {
     @extend %transicion;
     background-color: variables.$fondo-secundario;
@@ -134,6 +134,59 @@
             font-family: variables.$fuente-etiquetas;
             font-size: 0.78rem;
             letter-spacing: 0.1em;
+            color: variables.$dorado;
+        }
+    }
+}
+
+// Tarjeta informativa para datos de contacto y horarios.
+.tarjeta-info {
+    @extend %transicion;
+    background-color: variables.$fondo-secundario;
+    border: 1px solid variables.$borde;
+    border-radius: variables.$radio-mediano;
+    box-shadow: variables.$sombra-stamp;
+    padding: 1.75rem;
+
+    &:hover {
+        border-color: variables.$dorado;
+    }
+
+    .icono-info {
+        width: 48px;
+        height: 48px;
+        border-radius: variables.$radio-chico;
+        background-color: variables.$fondo-elevado;
+        border: 1px solid variables.$borde;
+        color: variables.$dorado;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        margin-bottom: 1.25rem;
+        box-shadow: variables.$sombra-stamp;
+    }
+
+    h3 {
+        font-family: variables.$fuente-etiquetas;
+        font-size: 1.15rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.5rem;
+        color: variables.$blanco-crema;
+    }
+
+    p,
+    a {
+        color: variables.$gris-claro;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    a {
+        @extend %transicion;
+
+        &:hover {
             color: variables.$dorado;
         }
     }

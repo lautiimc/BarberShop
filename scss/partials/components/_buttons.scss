@@ -1,7 +1,7 @@
 @use "../utilities/variables";
 @use "../utilities/extend";
 
-// Boton base con tipografia Oswald y sombra stamp.
+// Boton base con tipografia Oswald condensada y sombra stamp.
 .boton {
     @extend %transicion;
     display: inline-flex;
@@ -35,7 +35,7 @@
     }
 }
 
-// Boton primario carmesi con marco dorado.
+// Boton primario en tono carmesi clasico (crimson barber red) con borde y sello artesanal.
 .boton-dorado {
     background-color: variables.$rojo-barbero;
     color: #fffbff;
@@ -49,7 +49,7 @@
     }
 }
 
-// Boton secundario con borde de laton.
+// Boton secundario con marco de laton envejecido (antique brass).
 .boton-outline {
     background-color: variables.$fondo-elevado;
     color: variables.$dorado;
@@ -63,7 +63,7 @@
     }
 }
 
-// Boton para reservas de WhatsApp.
+// Boton especifico para turnos de WhatsApp con identidad Heritage Barber.
 .boton-whatsapp {
     background-color: variables.$rojo-barbero;
     color: #fffbff;

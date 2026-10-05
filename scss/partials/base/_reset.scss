@@ -1,4 +1,4 @@
-// Reset basico para consistencia entre navegadores.
+// Reseteo moderno de estilos basicos para consistencia entre navegadores.
 
 *,
 *::before,
@@ -20,7 +20,8 @@ body {
 }
 
 img,
-picture {
+picture,
+video {
     display: block;
     max-width: 100%;
     height: auto;
@@ -31,13 +32,17 @@ a {
     text-decoration: none;
 }
 
-button {
+button,
+input,
+textarea,
+select {
     font: inherit;
     border: none;
     outline: none;
     background: none;
 }
 
-ul {
+ul,
+ol {
     list-style: none;
 }

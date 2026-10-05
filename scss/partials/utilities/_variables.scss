@@ -27,14 +27,17 @@ $gris-claro: #e0bfb9;
 // Bordes grabados y tramline.
 $borde: #58413c;
 $borde-dorado: rgba(250, 188, 77, 0.5);
+$borde-fino: 1px solid #58413c;
 
 // Sombras tipo sello fisico (tactile stamp shadow).
 $sombra-stamp: 3px 3px 0px 0px #100e0b;
+$sombra-stamp-dorada: 3px 3px 0px 0px #3a2600;
 $sombra: 0 18px 45px rgba(0, 0, 0, 0.4);
 
-// Bordes netos y clasicos.
+// Bordes netos y clasicos con esquinas sutilmente atenuadas.
 $radio-chico: 4px;
 $radio-mediano: 6px;
+$radio-grande: 8px;
 
 // Medidas y espaciados de estructura.
 $ancho-maximo: 1200px;
